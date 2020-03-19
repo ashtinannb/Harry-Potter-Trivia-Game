@@ -1,0 +1,12 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+	background-color: black;
+	margin: 0px;
+	padding: 0px;
+	color: whitesmoke
+} 
+
+.questions {
+  font-size: 20px;
+  
+}
