@@ -22,54 +22,236 @@
 
 <body>
 
-    <!-- Harry Potter Logo -->
     <div class="container">
 
+        <!-- Harry Potter Logo -->
         <div class="row">
             <div class="col-md-12 text-center">
                 <img src="assets/images/potterlogo.jpg" class="img-fluid text-center" id="main-logo"
                     alt="Harry Potter Logo">
-                <h1 class="display-3">Trivia Game</h1>
+                <h1 class="display-4">O.W.L.'s</h1>
+                <h1 class="display-5">Ordinary Wizarding Level Exam</h1>
+             <!--Timer-->
+                <h2 id="timeRemaining">Time Remaining: <span id ="timer"></span></h2>
+                <!--Answers-->
+               <div class="answers"></div>
+               <!--Start Button-->
+               <button type="button" class="btn btn-warning" id="start-game">Begin</button>
             </div>
         </div>
     </div>
 
-    <!-- Harry Potter Movie Poster-->
-    <div class="row">
+
+    <!--Harry Potter <div class="row">
         <div class="col-md-5">
             <img src="assets/images/potter.jpg" class="img-fluid text-center" id="family-photo"
                 alt="harry potter poster">
         </div>
+    </div> Movie Poster-->
+   
+<br>
+<br>
 
-        <!-- Timer -->
-        <div>
-            <h2 id="timer"></h2>
-        </div>
+    <!--Q1-->
+    <div class = "questions text-center">
+        <p class = "?">Who is the headmaster of Hogwarts?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Hagrid
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> James Potter  
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct"> Albus Dumbledore 
+            </label>
+        </form>
     </div>
 
-    <div class="offset-md-1"></div>
+    <br>
+    <br>
 
-    <div class="col-md-4">
-        <div id="start-page" class="start-page-text">
-            <h2>Get ready to play</h2>
-            <p>Test your knowledge of <i>Harry Potter</i> with this multiple choice trivia game. You have 60 seconds to
-                answer all the questions and the game ends automatically when time has elapsed. Good luck!</p>
-            <div class="btn btn-warning" id="play-button">Play!
-            </div>
-        </div>
+    <!--Q2-->
+    <div class = "questions text-center">
+        <p class = "?">What house is Harry sorted into?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct"> Gryffindor
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Hufflepuff 
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Ravenclaw 
+            </label>
+        </form>
     </div>
+
+<br>
+<br>
+
+    <!--Q3-->
+    <div class = "questions text-center">
+        <p class = "?">Who teaches Defense Against the Dark Arts Harry's 4th year at Hogwarts?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Professor Quirrel
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Professor Snape
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct"> Mad-Eye Moody 
+            </label>
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+    <!--Q4-->
+    <div class = "questions text-center">
+        <p class = "?">Who is Fluffy?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Hermione's Cat
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct"> A Three-Headed Dog
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> A Hippogriff 
+            </label>
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+    <!--Q5-->
+    <div class = "questions text-center">
+        <p class = "?">What power does Harry share with Voldemort?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct"> He's a Parselmouth
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> He's an Animagus
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> He's an Auror
+            </label>
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+    <!--Q6-->
+    <div class = "questions text-center">
+        <p class = "?">Who is Scabbers?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct"> Ron's pet rat
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Neville's Toad
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Hogwarts' Poltergeist
+            </label>
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+    <!--Q7-->
+    <div class = "questions text-center">
+        <p class = "?">What position does Harry play on the Quidditch team?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Beater
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Keeper
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct"> Seeker
+            </label>
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+    <!--Q8-->
+    <div class = "questions text-center">
+        <p class = "?">Who is the Half-Blood Prince?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Sirius Black
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct"> Severus Snape
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> James Potter
+            </label>
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+    <!--Q9-->
+    <div class = "questions text-center">
+        <p class = "?">What is Hermione's Patronus?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> A Stag
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> A Cat
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct"> An Otter
+            </label>
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+    <!--Q10-->
+    <div class = "questions text-center">
+        <p class = "?">How is Dobby freed from the Malfoy's?</p>
+        <form class="question">
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="correct"> A Sock
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> Signed parchment from the Minister of Magic
+            </label>
+            <label class="form-check form-check-inline text-mysize">
+              <input type="radio" name="optradio" class="optradio" value="wrong"> A Broomstick
+            </label>
+        </form>
+    </div>
+
+    <br>
+    <br>
+    
+
+
+
+
+
+
+    
 
     <div>
-        <div id="questions-box">
-        </div>
-    </div>
-
-    <div class="hidden" id="end-page">
-        <h2>Here are your scores:</h2>
-        <p id="correct-answers"></p>
-        <p id="incorrect-answers"></p>
-        <p id="unanswered"></p>
-
+  
     </div>
     </div>
     </div>
@@ -77,8 +259,8 @@
 
 
 
-    <!-- jQuery Library Link -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    
 
     <!-- Js Link-->
     <script type="text/javascript" src="assets/javascript/app.js"></script>
