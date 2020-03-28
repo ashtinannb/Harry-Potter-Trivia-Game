@@ -1,12 +1,36 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
-	background-color: black;
+ font-family: 'IM Fell Great Primer SC', serif;
+ background-color: black;
 	margin: 0px;
 	padding: 0px;
-	color: whitesmoke
+	color:grey
 } 
 
+.owls {
+	font-size: 42px;
+	color: goldenrod;
+}
+
+.owls2 {
+	font-size: 42px;
+	color: goldenrod;
+}
+
+#timeRemaining {
+	font-size: 42px;
+	color: goldenrod;
+}
 .questions {
-  font-size: 20px;
-  
+  font-size: 36px;
+  padding-bottom: 100px;
+}
+
+.button {
+margin: 100px 0;
+
+}
+
+.endGame {
+	font-size: 42px;
+	color: goldenrod;
 }
